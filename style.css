@@ -18,6 +18,42 @@ body {
   background-image: linear-gradient((#131740, #0d102d));
 }
 
+/* --------------------package animation------------------ */
+
+@keyframes slide-contact {
+  0% {
+    transform: translateY(+100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.contact-col {
+  animation: slide-contact 0.9s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+}
+
+
+/* --------------------package animation------------------ */
+
+@keyframes slide-package {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.contain {
+  animation: slide-package 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+}
+
+
 /* -------animation for home page-------- */
 
 @keyframes slide-img {
@@ -257,6 +293,8 @@ main {
     padding-top: 50px;
     overflow: hidden;
     margin-bottom: 0px;
+    /* padding-inline: 30px; */
+    background-image: cover;
   }
 
   .middle-info h1 {
@@ -538,4 +576,263 @@ footer {
     margin-left: 0;
     margin-top: 10px;
   }
+}
+
+
+/*---------------------------------------Basic ,Premimum and ultra package -----------------------------------------------------*/
+
+.contain{
+  padding: 200px;
+  color: white;
+}
+
+.containing{
+  width: 100%;
+  display: flex;
+  gap:20%;
+}
+
+/* monthly box */
+.monthly{
+  width: 40%;
+  box-sizing: border-box;
+ border: 2px solid #ab46d2;
+}
+.monthly h2{
+  font-size: 35px;
+  text-align: center;
+  background-color: #ab46d2;
+}
+.monthly h1{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.monthly h1 span{
+  font-size: small;
+}
+.monthly p{
+  margin-left: 5%;
+  /* padding-block: 0; */
+}
+.monthly button{
+  margin-top: 8%;
+  margin-bottom: 10%;
+  margin-left: 30%;
+  width: 40%;
+  border: 2px solid #ab46d2;
+}
+
+/* Quartely box */
+.Quartely{
+
+  width: 40%;
+  box-sizing: border-box;
+  border: 2px solid #ab46d2;
+}
+.Quartely h2{
+  font-size: 35px;
+  text-align: center;
+  background-color: #ab46d2;
+}
+.Quartely h1{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.Quartely h1 span{
+  font-size: small;
+}
+.Quartely p{
+  margin-left: 5%;
+}
+.Quartely button{
+  margin-top: 8%;
+  margin-bottom: 10%;
+  margin-left: 30%;
+  width: 40%;
+  border: 2px solid#ab46d2;
+}
+
+
+.containing2{
+  width: 100%;
+  margin-top: 10%;
+    display: flex;
+    gap:20%;
+}
+/* halfyearly box */
+.halfyearly{
+  width: 40%;
+  box-sizing: border-box;
+  border: 2px solid #ab46d2;
+}
+.halfyearly h2{
+  font-size: 35px;
+  text-align: center;
+  background-color: #ab46d2;
+}
+.halfyearly h1{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.halfyearly h1 span{
+  font-size: small;
+}
+.halfyearly p{
+  margin-left: 5%;
+}
+.halfyearly button{
+  margin-top: 8%;
+  margin-bottom: 10%;
+  margin-left: 30%;
+  width: 40%;
+  border: 2px solid #ab46d2;
+}
+/* Yearly box */
+.yearly{
+  width: 40%;
+  box-sizing: border-box;
+  border: 2px solid #ab46d2;
+}
+.yearly h2{
+  font-size: 35px;
+  text-align: center;
+  background-color: #ab46d2;
+}
+.yearly h1{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.yearly h1 span{
+  font-size: small;
+}
+.yearly p{
+  margin-left: 5%;
+}
+.yearly button{
+  margin-top: 8%;
+  margin-bottom: 10%;
+  margin-left: 30%;
+  width: 40%;
+  border: 2px solid #ab46d2;
+}
+
+.contain button{
+  padding-block: 10px;
+  font-size: large;
+  border: 2px solid #ab46d2;
+  outline: none;
+}
+/*---------------------------------------Basic ,Premimum and ultra package media part -----------------------------------------------------*/
+@media (max-width: 700px){
+
+
+  .contain{
+    padding-inline: 30px;
+    color: white;
+    margin-top: 0px;
+    padding-block: 120px;
+  }
+  .containing{
+    display: block;
+  }
+  .monthly{
+    width: 100%;
+  
+  }
+  .monthly h1{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 7%;
+  }
+  .monthly button{
+    margin-top: 10%;
+    margin-bottom: 6%;
+    margin-left: 25%;
+    width: 50%;
+    border: 3px solid yellow;
+  }
+  .Quartely{
+    margin-top: 10%;
+    width: 100%;
+  }
+  .Quartely button{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    width: 60%;
+    border: 3px solid yellow;
+  }
+  .containing2{
+    margin-top: 15%;
+      display: block;
+     
+  }
+  .halfyearly{
+   
+    width: 100%;
+  
+  }
+  .halfyearly button{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    width: 60%;
+    border: 3px solid yellow;
+  }
+  .yearly{
+    margin-top: 15%;
+    width: 100%;
+  
+  }
+  .yearly button{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    width: 60%;
+    border: 3px solid yellow;}
+
+    .monthly h2{
+      font-size: 29px;
+    }
+
+    .monthly h1{
+      margin-block: 15px;
+    }
+
+    .Quartely h2{
+      font-size: 29px;
+    }
+
+    .Quartely h1{
+      margin-block: 15px;
+    }
+
+    .yearly h2{
+      font-size: 29px;
+    }
+
+    .yearly h1{
+      margin-block: 15px;
+    }
+
+    .halfyearly h2{
+      font-size: 29px;
+    }
+
+    .halfyearly h1{
+      margin-block: 15px;
+    }
+
+    .contain button{
+      border: 2px solid #ab46d2;
+    }
 }

@@ -1643,7 +1643,7 @@ form .input-field {
   /* border: 1px solid black; */
   border: 2px solid #ccc;
   box-shadow: 1px 2px 2px 2px #aaa;
-  background: linear-gradient(to right, #aaa, #6a6ae5);
+  background: linear-gradient(to right, #ccc, #6a6ae5);
 }
 .box3 h3{
   text-align: center;
@@ -1721,7 +1721,7 @@ form .input-field {
       width: 70%;
       height: 100%;
       box-sizing: border-box;
-  
+      margin-bottom: 15px;
   }
   .box1 h3{
       text-align: center;
@@ -1739,6 +1739,7 @@ form .input-field {
       width: 70%;
       height: 100%;
       box-sizing: border-box;
+      margin-bottom: 15px;
   }
   .box2 h3{
      text-align: center;
